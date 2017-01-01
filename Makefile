@@ -4,7 +4,7 @@ SDK_ROOT=$(XCODE_PATH)/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS.sdk
 CSU_VERSION=85
 VPATH=Csu-$(CSU_VERSION)
 CC=$(XCODE_PATH)/usr/bin/gcc
-ARCH_CFLAGS= -arch armv7 -arch armv7s -isysroot $(SDK_ROOT)
+ARCH_CFLAGS= -arch armv7 -arch armv7s -arch arm64 -isysroot $(SDK_ROOT)
 OS_MIN_V2= -miphoneos-version-min=2.0
 OS_MIN_V3= -miphoneos-version-min=2.0
 
